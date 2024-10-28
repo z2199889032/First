@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Mine/PersonalInformation",
+    "pages/Mine/Profile",
+    "pages/TabsPage",
+    "pages/Home/HomePage"
+  ]
+}

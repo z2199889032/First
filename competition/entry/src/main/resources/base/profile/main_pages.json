@@ -4,6 +4,8 @@
     "pages/Mine/PersonalInformation",
     "pages/Mine/Profile",
     "pages/TabsPage",
-    "pages/Home/HomePage"
+    "pages/Home/HomePage",
+    "pages/Second",
+    "pages/Enrol"
   ]
 }

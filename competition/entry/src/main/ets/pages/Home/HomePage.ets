@@ -65,6 +65,7 @@ export  struct HomePage {
     })
 
   }
+  //下半部分
   @Builder
   SecondHalfComponent(){
     Column({space:45}){

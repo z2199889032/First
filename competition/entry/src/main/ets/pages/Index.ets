@@ -34,7 +34,7 @@ export  struct Index {
               Button("立即登录").fontSize(18)
                 .width("80%").backgroundColor('#0da016').opacity(0.8).type(ButtonType.Capsule)
                 .onClick(()=>{
-                router.pushUrl({url:"pages/CustomScene"})
+                router.pushUrl({url:"pages/Enrol"})
               })
             }.width("100%").height("10%").margin({
               top:350

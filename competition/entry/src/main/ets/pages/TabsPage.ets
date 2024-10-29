@@ -1,6 +1,6 @@
 import {Profile} from "./Mine/Profile"
 import {Index} from "./Index"
-import {HomePage} from "./Home/HomePage"
+import {Information} from "./Information/Information"
 import { promptAction, router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 @Entry
@@ -13,17 +13,18 @@ export  struct TabsPage {
     Column(){
       Tabs({barPosition: BarPosition.End, controller: this.tabsController}){
         TabContent(){
-          HomePage()
-          // Text('首页')
-        }.tabBar(this.TabBuilder('首页',$rawfile('icon/industry06.png'),$rawfile('icon/首页绿.png'),0))
+
+          Text('监控')
+        }.tabBar(this.TabBuilder('监控',$rawfile('icon/industry06.png'),$rawfile('icon/首页绿.png'),0))
 
         TabContent(){
           Text('设备')
         }.tabBar(this.TabBuilder('设备',$rawfile('icon/changjingguanli.png'),$rawfile('icon/设备绿.png'),1))
 
         TabContent(){
-          Text('监控')
-        }.tabBar(this.TabBuilder('监控',$rawfile('icon/nongyezhineng.png'),$rawfile('icon/监控绿.png'),2))
+          // Text('监控')
+          Information()
+        }.tabBar(this.TabBuilder('资讯',$rawfile('icon/nongyezhineng.png'),$rawfile('icon/监控绿.png'),2))
 
         TabContent(){
           Profile()

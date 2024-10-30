@@ -7,6 +7,9 @@
     "pages/Information/Information",
     "pages/Second",
     "pages/Enrol",
-    "pages/Equipment/Equipment"
+    "pages/Equipment/Equipment",
+    "pages/Equipment/EquipmentAdd",
+    "pages/Monitor/AddEnvironment",
+    "pages/Equipment/AddScene"
   ]
 }

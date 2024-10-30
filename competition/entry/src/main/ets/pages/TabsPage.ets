@@ -3,6 +3,9 @@ import {Index} from "./Index"
 import {Information} from "./Information/Information"
 import { promptAction, router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
+import { Equipment } from "./Equipment/Equipment";
+import { DeviceInfor } from "./Monitor/deviceInfor";
+
 @Entry
 @Component
 export  struct TabsPage {
@@ -13,16 +16,14 @@ export  struct TabsPage {
     Column(){
       Tabs({barPosition: BarPosition.End, controller: this.tabsController}){
         TabContent(){
-
-          Text('监控')
-        }.tabBar(this.TabBuilder('监控',$rawfile('icon/industry06.png'),$rawfile('icon/首页绿.png'),0))
+          DeviceInfor()
+        }.tabBar(this.TabBuilder('监测',$rawfile('icon/industry06.png'),$rawfile('icon/首页绿.png'),0))
 
         TabContent(){
-          Text('设备')
+          Equipment()
         }.tabBar(this.TabBuilder('设备',$rawfile('icon/changjingguanli.png'),$rawfile('icon/设备绿.png'),1))
 
         TabContent(){
-          // Text('监控')
           Information()
         }.tabBar(this.TabBuilder('资讯',$rawfile('icon/nongyezhineng.png'),$rawfile('icon/监控绿.png'),2))
 
@@ -54,7 +55,7 @@ export  struct TabsPage {
     .justifyContent(FlexAlign.Center)
     .border({
       width:{top:1},
-      color: 'f000000'
+      color:'#ffaca8a8'
     })
     .onClick(() => {
       this.currentIndex = tag
